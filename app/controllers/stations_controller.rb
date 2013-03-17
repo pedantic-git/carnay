@@ -10,6 +10,7 @@ class StationsController < ApplicationController
   # GET /stations/1
   # GET /stations/1.json
   def show
+    @gmap = @station.to_gmaps4rails
   end
 
   # GET /stations/new
